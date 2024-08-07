@@ -18,8 +18,7 @@
   },
   "homepage": "https://github.com/ctcpip/re2js-legendary#readme",
   "files": [
-    "index.cjs",
-    "index.cjs.map"
+    "index.cjs"
   ],
   "devDependencies": {
     "eslint": "^9.8.0",
