@@ -1,0 +1,29 @@
+{
+  "name": "re2js-legendary",
+  "version": "0.1.0",
+  "description": "a node v0.10 compatible build of RE2JS",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha test/**/*.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ctcpip/re2js-legendary.git"
+  },
+  "author": "Chris de Almeida",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ctcpip/re2js-legendary/issues"
+  },
+  "homepage": "https://github.com/ctcpip/re2js-legendary#readme",
+  "files": [
+    "index.cjs",
+    "index.cjs.map"
+  ],
+  "devDependencies": {
+    "eslint": "^9.8.0",
+    "eslint-config-ultra-mega": "^2.0.0",
+    "mocha": "^3.5.3"
+  }
+}
