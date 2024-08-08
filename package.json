@@ -1,8 +1,8 @@
 {
   "name": "re2js-legendary",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "a node v0.10 compatible build of RE2JS",
-  "main": "index.js",
+  "main": "index.cjs",
   "scripts": {
     "lint": "eslint .",
     "test": "mocha test/**/*.cjs"

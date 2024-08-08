@@ -9,4 +9,18 @@ describe('re2js', function() {
     assert.ok(RE2JS.matches('ab+c', 'abbbc'));
     assert.ok(!RE2JS.matches('ab+c', 'cbbba'));
   });
+
+  it('should work with regexp', function() {
+    var re = /yee/;
+    var p = RE2JS.compile(re.source);
+    assert.ok(p.matches('yee'));
+  });
+
+  it('should work with flags', function() {
+    var re = /yee/i;
+    var flags = re.flags.indexOf('i') >= 0 ? RE2JS.CASE_INSENSITIVE : null;
+    var p = RE2JS.compile(re.source, flags);
+    assert.ok(p.matches('yee'));
+    assert.ok(p.matches('YEE'));
+  });
 });
